@@ -192,10 +192,36 @@
             width: 150px;
             font-size: 10px;
         }
+
+        .imageContainer {
+            position: relative;
+            display: inline-block;
+        }
+
+        .imageContainer img {
+            width: 80%;
+            display: block;
+        }
+
+        .imageContainer .shadow {
+            position: absolute;
+            bottom: 80px;
+            /* Controls distance from image */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            height: 20px;
+            background: rgba(0, 0, 0, 0.673);
+            border-radius: 50%;
+            filter: blur(8px);
+            z-index: -1;
+            /* Put shadow behind the image */
+        }
     </style>
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header>
         <nav>
             <div class="left" style="margin-left: 50px;">Ankan's Portfolio</div>
@@ -222,7 +248,11 @@
                 <span id="element" class="violet" style="font-size: 2rem;"></span>
             </div>
             <div class="rightSection">
-                <img src="developer.png" alt="developer image">
+                <div class="imageContainer">
+                    <img src="developer.png" alt="developer image">
+                    <div class="shadow"></div>
+                </div>
+                <!-- <img src="developer.png" alt="developer image"> -->
             </div>
         </section>
 
@@ -287,6 +317,13 @@
             typeSpeed: 50,
         });
     </script>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.js config loaded');
+        });
+    </script>
+
 
 </body>
 
