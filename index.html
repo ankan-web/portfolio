@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #010124;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+            height: 80px;
+            background-color: #03013D;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(171, 171, 182);
+
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(112, 104, 221);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            margin: 20px 0;
+            width: 30%;
+        }
+
+        .leftSection {
+            width: 100%;
+
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .violet {
+            color: rgb(164, 100, 223);
+            font-weight: 500;
+            font-size: 150%;
+        }
+
+        .yellow {
+            color: #caf0f8;
+            font-weight: 500;
+            font-size: 150%;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+        }
+
+        .hover-underline-animation.center::after {
+            transform-origin: bottom center;
+        }
+
+        .hover-underline-animation.center:hover::after {
+            transform-origin: bottom center;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            height: 2px;
+            width: 80vw;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .grey {
+            color: grey;
+            font-size: smaller;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -40px;
+            left: -20px;
+        }
+
+        .image-top2 {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -16px;
+        }
+
+        .image-top3 {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -15px;
+        }
+
+        .image-top4 {
+            width: 40px;
+            position: relative;
+            top: -38px;
+            left: -20px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 150px;
+            top: 75px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" style="margin-left: 50px;">Ankan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li class="hover-underline-animation"><a href="/">Home</a></li>
+                    <li class="hover-underline-animation"><a href="/">About</a></li>
+                    <li class="hover-underline-animation"><a href="/">Services</a></li>
+                    <li class="hover-underline-animation"><a href="/">Projects</a></li>
+                    <li class="hover-underline-animation"><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello!! My name is <span class="violet">Ankan</span>
+                <div>
+                    And I'm just learning <span class="yellow">Coding</span>
+                </div>
+                <span id="element" class="violet" style="font-size: 2rem;"></span>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="developer image">
+            </div>
+        </section>
+
+
+        <hr>
+        <section class="secondSection">
+            <span class="grey">what i have done so far</span>
+            <h1 style="margin-bottom: 40px;">Past Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html-5_5968267.png" alt="">
+                    <div class="vertical-title">
+                        Web-dev(FrontEnd)
+                    </div>
+                    <div class="vertical-desc grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus facere itaque
+                        distinctio a, consequuntur qui incidunt! Temporibus cum molestiae officiis velit odit
+                        perferendis similique provident animi accusamus qui. Laboriosam?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top2" src="python_5968350.png" alt="">
+                    <div class="vertical-title">
+                        Python programming
+                    </div>
+                    <div class="vertical-desc grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus facere itaque
+                        distinctio a, consequuntur qui incidunt! Temporibus cum molestiae officiis velit odit
+                        perferendis similique provident animi accusamus qui. Laboriosam?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top3" style="top:-100" src="c_6132222.png" alt="">
+                    <div class="vertical-title">
+                        DSA with C++
+                    </div>
+                    <div class="vertical-desc grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus facere itaque
+                        distinctio a, consequuntur qui incidunt! Temporibus cum molestiae officiis velit odit
+                        perferendis similique provident animi accusamus qui. Laboriosam?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top4" src="cloud-computing_3176025.png" alt="">
+                    <div class="vertical-title">
+                        Cloud Enginnering
+                    </div>
+                    <div class="vertical-desc grey">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum necessitatibus facere itaque
+                        distinctio a, consequuntur qui incidunt! Temporibus cum molestiae officiis velit odit
+                        perferendis similique provident animi accusamus qui. Laboriosam?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i></i> welcome to my Portfolio.', 'currently Learning DSA.', 'C++ , C , JAVA , Python.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
